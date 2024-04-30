@@ -1,0 +1,36 @@
+header {
+    padding: 20px;
+}
+
+.header content, .footer-content {
+    padding: 0 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    margin: 0 15px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+figure {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+
+.hamburger {
+    display: none;
+}
+
+footer {
+    padding: 20px;
+}
