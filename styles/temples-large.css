@@ -1,36 +1,41 @@
-header {
-    padding: 20px;
-}
+@media screen and (min-width: 768px) {
+    nav {
+        display: block;
+    }
 
-.header content, .footer-content {
-    padding: 0 40px;
-}
+    .hamburger {
+        display: none;
+    }
 
-nav {
-    display: flex;
-    justify-content: center;
-}
+    header {
+        padding: 20px;
+    }
 
-nav a {
-    margin: 0 15px;
-}
+    .header-content, .footer-content {
+        padding: 0 40px;
+    }
 
-main {
-    max-width: 800px;
-    margin: 0 auto;
-}
+    nav {
+        display: flex;
+        justify-content: center;
+    }
 
-figure {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 20px;
-}
+    nav a {
+        margin: 0 15px;
+    }
 
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+    }
 
-.hamburger {
-    display: none;
-}
+    figure {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 20px;
+    }
 
-footer {
-    padding: 20px;
+    footer {
+        padding: 20px;
+    }
 }
