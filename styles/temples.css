@@ -11,7 +11,7 @@ header {
 }
 
 .header-content {
-    max-width: 800px;
+    max-width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -52,6 +52,11 @@ main h2 {
     text-align: center;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 footer {
     background-color: #333;
     color: #fff;
@@ -72,13 +77,10 @@ footer {
 }
 
 /* Larger view styles */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 320px) {
     nav {
-        display: flex;
-        justify-content: center;
+        display: none;
     }
 
-    nav a {
-        margin: 0 15px;
-    }
 }
+        
