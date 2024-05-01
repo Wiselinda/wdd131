@@ -6,11 +6,11 @@ body {
 
 header {
     background-color: #333;
-    color: #240fde;
+    color: #fff;
     padding: 10px;
 }
 
-.header-content, .footer-content {
+.header-content {
     max-width: 800px;
     margin: 0 auto;
     display: flex;
@@ -28,13 +28,20 @@ nav {
 }
 
 nav a {
-    color: #cc15d2;
+    color: #fff;
     text-decoration: none;
     margin-right: 10px;
 }
 
+nav a:hover {
+	text-decoration: underline;
+}
+
 main {
     padding: 20px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 20px;
 }
 
 figure {
@@ -47,7 +54,7 @@ main h2 {
 
 footer {
     background-color: #333;
-    color: #240fde;
+    color: #fff;
     text-align: center;
     padding: 10px;
 }
@@ -58,6 +65,20 @@ footer {
     top: 10px;
     right: 10px;
     cursor: pointer;
-    color: #5718d6;
-    font-size: 20px;
+    color: #fff;
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+}
+
+/* Larger view styles */
+@media screen and (min-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 0 15px;
+    }
 }
