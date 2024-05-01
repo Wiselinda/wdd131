@@ -1,11 +1,5 @@
 @media screen and (min-width: 768px) {
-    img {
-        width: auto;
-        max-width: 100%;
-
-    }
-}
-
+    
 header {
     padding: 20px;
 }
@@ -31,3 +25,4 @@ footer {
     padding: 20px;
 }
 
+}
