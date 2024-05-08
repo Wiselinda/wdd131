@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Information</title>
+    <link rel="stylesheet" href="styles/place.css">
+</head>
+<body>
+    <header>
+        <h1>Haiti</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 600px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                <source srcset="images/hero-large.webp">
+                <img src="images/hero-small.webp" alt="Hero Images">
+            </picture>
+        </section>
+        <section class="data">
+            <h2>Data</h2>
+            <div id="data-info">
+                <p><strong>Area:</strong> <span id="area">27750 sq km</span></p>
+                <p><strong>Capital:</strong> <span id="capital">Port-au-Prince</span></p>
+                <p><strong>Population:</strong> <span id="population">10,711,061</span></p>
+                <p><strong>Language:</strong> <span id="language">Creole, French</span></p>
+                <p><strong>Currency:</strong> <span id="currency">Haitian gourde</span></p>
+                <p><strong>Time zone:</strong> <span id="time-zone">UTC-4</span></p>
+                <p><strong>Calling code:</strong> <span id="calling-code">+509</span></p>
+            </div>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <div id="weather-info">
+                <img src="images/weather-icon.svg" alt="Weather Icon">
+                <p><strong>Temperature:</strong> <span id="temperature">25°C</span></p>
+                <p><strong>Wind Speed:</strong> <span id="wind-speed">10 km/h</span></p>
+                <p><strong>Conditions:</strong> <span id="conditions">Sunny</span></p>
+                <p><strong>Wind Chill:</strong> <span id="wind-chill">N/A</span></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="current-year"></span> ❤ Wiselinda Zidor ❤ Haiti, Port-au-Prince</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+    <script src="scripts/place.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: red;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Hero Images */
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* Weather Section */
+.weather, .data {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #3e3eea;
+    border-radius: 10px;
+}
+
+.weather img {
+    width: 100px; /* Adjust the width and height as needed */
+    height: auto;
+    margin-bottom: 10px; /* Add some space below the icon */
+    display: block; /* Ensure the icon is displayed as a block element */
+}
+
+footer {
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* CSS for wider view */
+@media only screen and (min-width: 1000px) {
+    header {
+        text-align: center;
+    }
+    .hero {
+        position: relative;
+        background-image: url('images/hero-large.webp');
+        background-size: cover;
+        background-position: center;
+    }
+    .data {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        top: 90%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        margin-top: 50px;
+    }
+    .weather {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        top: 80%;
+        right: 70%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        margin-bottom: 50px;
+    }
+}
