@@ -41,6 +41,13 @@ main {
     display: block; /* Ensure the icon is displayed as a block element */
 }
 
+.weather::after {
+    content: url('images/weather-icon.svg'); /* Replace 'path_to_your_weather_icon.svg' with the actual path to your weather icon */
+    display: block;
+    margin: 10px auto; /* Adjust as needed */
+}
+
+
 footer {
     background-color: red;
     color: #fff;
