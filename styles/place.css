@@ -57,6 +57,9 @@ footer {
     header {
         text-align: center;
     }
+    .weather::after {
+        content: none;
+    }
     .hero {
         position: relative;
         background-image: url('images/hero-large.webp');
