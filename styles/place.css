@@ -20,13 +20,11 @@ main {
     padding: 20px;
 }
 
-/* Hero Images */
 .hero img {
     width: 100%;
     height: auto;
 }
 
-/* Weather Section */
 .weather, .data {
     margin-top: 20px;
     text-align: center;
@@ -35,16 +33,16 @@ main {
 }
 
 .weather img {
-    width: 100px; /* Adjust the width and height as needed */
+    width: 100px; 
     height: auto;
-    margin-bottom: 10px; /* Add some space below the icon */
-    display: block; /* Ensure the icon is displayed as a block element */
+    margin-bottom: 10px; 
+    display: block; 
 }
 
 .weather::after {
-    content: url('images/weather-icon.svg'); /* Replace 'path_to_your_weather_icon.svg' with the actual path to your weather icon */
+    content: url('images/weather-icon.svg'); 
     display: block;
-    margin: 10px auto; /* Adjust as needed */
+    margin: 10px auto; 
 }
 
 
@@ -55,7 +53,6 @@ footer {
     padding: 10px 0;
 }
 
-/* CSS for wider view */
 @media only screen and (min-width: 1000px) {
     header {
         text-align: center;
