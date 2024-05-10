@@ -1,6 +1,5 @@
 :root {
     --main-color: red;
-    --secondary-color: #3e3ee;
     --textalign: center;
 }
 
@@ -32,7 +31,7 @@ main {
 .weather, .data {
     margin-top: 20px;
     text-align: var(--textalign);
-    background-color: var(--secondary-color);
+    background-color: blue;
     border-radius: 10px;
 }
 
@@ -40,15 +39,8 @@ main {
     width: 100px; 
     height: auto;
     margin-bottom: 10px; 
-    display: block; 
+    justify-content: center;
 }
-
-.weather::after {
-    content: url('images/weather-icon.svg'); 
-    display: block;
-    margin: 10px auto; 
-}
-
 
 footer {
     background-color: var(--main-color);
