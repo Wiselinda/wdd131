@@ -1,6 +1,7 @@
 :root {
     --main-color: red;
-    --secondary-color: blue;
+    --secondary-color: #3e3ee;
+    --textalign: center;
 }
 
 body {
@@ -10,10 +11,13 @@ body {
 }
 
 header {
-    background-color: red;
-    color: #fff;
+    background-color: var(--main-color);
     padding: 10px 20px;
-    text-align: center;
+    text-align: var(--textalign);
+}
+
+h1 {
+    color: #000;
 }
 
 main {
@@ -27,8 +31,8 @@ main {
 
 .weather, .data {
     margin-top: 20px;
-    text-align: center;
-    background-color: #3e3eea;
+    text-align: var(--textalign);
+    background-color: var(--secondary-color);
     border-radius: 10px;
 }
 
@@ -47,24 +51,33 @@ main {
 
 
 footer {
-    background-color: red;
-    color: #fff;
-    text-align: center;
+    background-color: var(--main-color);
+    text-align: var(--textalign);
     padding: 10px 0;
+}
+
+footer p {
+    color: #000;  
 }
 
 @media only screen and (min-width: 1000px) {
     header {
-        text-align: center;
+        text-align: var(--textalign);
     }
-    .weather::after {
-        content: none;
+    .weather img{
+        display: none;
     }
+    .weather h2::after{
+        content: '❤';
+        padding: 0.5rem;
+    }
+
+
     .hero {
         position: relative;
         background-image: url('images/hero-large.webp');
         background-size: cover;
-        background-position: center;
+        background-position: var(--textalign);
     }
     .data {
         position: absolute;
