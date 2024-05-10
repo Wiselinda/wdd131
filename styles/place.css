@@ -60,7 +60,7 @@ footer p {
         display: none;
     }
     .weather h2::after{
-        content: '❤';
+        content: '⛅';
         padding: 0.5rem;
     }
 
