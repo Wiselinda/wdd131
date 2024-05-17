@@ -61,13 +61,13 @@ document.addEventListener('DOMContentLoaded', function() {
         templeName: "Tokyo Japan",
         location: "Tokyo, Japan",
         dedicated: "1980, October, 27",
-        area: 10764,
+        area: 111764,
         imageUrl: "https://img.goodfon.com/original/3800x2537/9/7b/senso-ji-ancient-buddhist-temple-tokyo-japan-senso-dzi-drevn.jpg"
       },
       {
         templeName: "Rio de Janeiro Brazil",
         location: "Rio de Janeiro, Brazil",
-        dedicated: "1978, March, 31",
+        dedicated: "2014, March, 31",
         area: 12873,
         imageUrl: "https://matuete.com/wpmatuete/wp-content/uploads/2013/12/riodejaneiro07.jpg"
   },
