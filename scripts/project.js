@@ -8,45 +8,48 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Function to load reviews from localStorage
     function loadReviews() {
-        const reviewsContainer = document.querySelector(".reviews");
+        const reviewsContainer = document.getElementById("review-list");
         const reviews = JSON.parse(localStorage.getItem("reviews")) || [];
 
         reviewsContainer.innerHTML = "";
         reviews.forEach(review => {
             const reviewCard = document.createElement("div");
             reviewCard.className = "review-card";
-            reviewCard.innerHTML = `<h3>${review.name}</h3><p>${review.message}</p>`;
+            reviewCard.innerHTML = `
+                <h3>${review.name}</h3>
+                <div class="rating">${'★'.repeat(review.rating)}${'☆'.repeat(5 - review.rating)}</div>
+                <p>${review.comment}</p>
+            `;
             reviewsContainer.appendChild(reviewCard);
         });
     }
 
     // Function to add a new review
-    function addReview(name, message) {
+    function addReview(name, rating, comment) {
         const reviews = JSON.parse(localStorage.getItem("reviews")) || [];
-        reviews.push({ name, message });
+        reviews.push({ name, rating: parseInt(rating), comment });
         localStorage.setItem("reviews", JSON.stringify(reviews));
         loadReviews();
     }
 
-    // Handle form submission
-    const contactForm = document.getElementById("contact-form");
-    if (contactForm) {
-        contactForm.addEventListener("submit", function(event) {
+    // Handle review form submission
+    const reviewForm = document.getElementById("review-form");
+    if (reviewForm) {
+        reviewForm.addEventListener("submit", function(event) {
             event.preventDefault();
-            const name = contactForm.name.value;
-            const email = contactForm.email.value;
-            const message = contactForm.message.value;
+            const name = reviewForm.name.value;
+            const rating = reviewForm.rating.value;
+            const comment = reviewForm.comment.value;
 
             // Add the new review
-            addReview(name, message);
+            addReview(name, rating, comment);
 
             // Reset the form
-            contactForm.reset();
-            alert("Thank you for your message!");
+            reviewForm.reset();
+            alert("Thank you for your review!");
         });
     }
 
     // Load reviews on page load
     loadReviews();
 });
-
